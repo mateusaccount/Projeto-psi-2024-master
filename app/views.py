@@ -59,3 +59,6 @@ def atletas(request):
 
 def sobre(request):
     return render(request, "sobre.html")
+
+def base(request):
+    return render(request, 'base.html')

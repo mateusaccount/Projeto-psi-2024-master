@@ -1,6 +1,16 @@
 {% extends 'base.html' %}
+
 {% block title %}Vasco da Gama{% endblock %}
+
 {% block content %}
     <h1>Página Inicial</h1>
-    <p></p>
-    {% endblock %}
+    <p>Bem-vindo ao site do Vasco da Gama!</p>
+
+    <nav>
+        <ul>
+            <li><a href="{% url 'sobre' %}">Sobre</a></li>
+            <li><a href="{% url 'index' %}">Página Inicial</a></li>
+            <li><a href="{% url 'atletas' %}">Atletas</a></li>
+        </ul>
+    </nav>
+{% endblock %}
